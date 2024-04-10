@@ -1,0 +1,45 @@
+* {
+    
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    background-color: gray;
+    border: 2px solid aqua;
+    padding: 10px;
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    /* Alinhamento Horizontal */
+    justify-content: space-between;
+    /* Alinhamento vertical */
+    align-items: top;
+    /* quebra de linha */
+    flex-wrap: wrap;
+}
+
+#id{
+
+    flex: 5 5 2px
+}
+.itemm {
+   
+    padding-top: 10px;
+    flex: 1 1 1px;
+}
+
+@media (min-width: 333px){
+    .container{
+        max-width:100vw ;  
+    }
+    
+}
+
+@media (min-width: 700px){
+    .itemm {
+        flex: 0.4 0.4 1px
+    }
+}
+
